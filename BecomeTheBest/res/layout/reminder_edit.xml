@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/fon3" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|bottom" >
+
+        <TextView
+            android:id="@+id/txtv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="@string/title"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            />
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:scrollbars="vertical"
+            android:hint="Введите задачу"  />
+
+        <TextView
+            android:id="@+id/txtv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="@string/body"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawSelectorOnTop="true"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/reminder_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/date"
+            android:textColorHint="@android:color/darker_gray"
+            android:textStyle="italic"
+            android:typeface="sans"
+             android:background="@drawable/fonbut"
+                          android:drawableLeft="@drawable/ic_action" />
+
+        <Button
+            android:id="@+id/reminder_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/time"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:textStyle="italic"
+            android:background="@drawable/fonbut"
+             android:drawableLeft="@drawable/ic_time" 
+            
+             />
+
+         <Button
+             android:id="@+id/confirm"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:gravity="center_horizontal|center_vertical"
+             android:layout_alignParentRight="true"
+             android:textColorHint="@android:color/holo_red_dark"
+             android:textStyle="bold"
+             android:drawableLeft="@drawable/icon_phone_normal" 
+             android:background="@drawable/fonbut"/>
+
+    </LinearLayout>
+    
+
+</ScrollView>

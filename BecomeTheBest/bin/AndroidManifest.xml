@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.taskreminder"
+    android:versionCode="1"
+    android:versionName="1.0" >
+     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ReminderListActivity"
+            android:label="@string/app_name" 
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Motivation"
+            android:label="@string/action_motivation" 
+              android:parentActivityName=".ReminderListActivity">
+        </activity>
+        <activity android:name=".ReminderEditActivity"
+            android:parentActivityName=".ReminderListActivity"
+            android:windowSoftInputMode="stateHidden" 
+            android:label="@string/app_add"/>
+        <activity android:name=".StatsManager"
+            android:label="@string/statistics"
+            android:parentActivityName=".ReminderListActivity" />
+         <receiver android:name=".OnAlarmReceiver" />
+           <service android:name=".ReminderService" />
+           <receiver android:name=".OnBootReceiver">
+             
+<intent-filter>
+<action android:name=
+"android.intent.action.BOOT_COMPLETED" />
+</intent-filter>
+</receiver>
+    </application>
+
+</manifest>

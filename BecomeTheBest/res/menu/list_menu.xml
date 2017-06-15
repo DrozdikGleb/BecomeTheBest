@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:id="@+id/menu_insert"
+        android:icon="@drawable/ic_action_plus"
+        android:title="@string/menu_insert"
+        android:showAsAction="always"
+         />
+  
+     <item
+        android:id="@+id/action_motivitaion"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_moti"
+        android:title="@string/action_motivation"
+        android:showAsAction="always"
+       />
+    
+    <item
+        android:id="@+id/statistics"
+        android:orderInCategory="100"
+        android:icon="@drawable/st"
+        android:title="@string/statistics"
+        android:showAsAction="always"
+       />  
+</menu>
+    

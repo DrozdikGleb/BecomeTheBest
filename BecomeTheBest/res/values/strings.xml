@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">BTB</string>
+    <string name = "action_motivation">Немного мотивации</string>
+    <string name ="delete_record">Удалить запись</string>
+    <string name="app_add">Добавление задачи</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" name="no_reminders">Напоминаний нет!</string>
+
+    <string android:id="@+id/string1" android:layout_height="wrap_content" android:layout_width="wrap_content" name="title">Название задачи</string>
+    <string android:layout_width="wrap_content" android:id="@+id/string1" android:layout_height="wrap_content" name="body">Cтепень важности задачи</string>
+    <string android:layout_height="wrap_content" android:id="@+id/string1" android:layout_width="wrap_content" name="date">Дата напоминания</string>
+    <string android:layout_height="wrap_content" android:id="@+id/string1" android:layout_width="wrap_content" name="time">Время напоминания</string>
+    <string android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/string1" name="confirm">Сохранить</string>
+    <string name="task_saved_message">Задача сохранена</string>
+    <string android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/string1" name="menu_insert">Добавить задачу</string>
+    <string android:id="@+id/string1" android:layout_height="wrap_content" android:layout_width="wrap_content" name="menu_delete">Удалить задачу</string>
+    <string android:id="@+id/string1" android:layout_height="wrap_content" android:layout_width="wrap_content" name="new_task_title">BecomeTheBest</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/string1" name="task_done">Задача выполнена!</string>
+    <string android:id="@+id/string1" android:layout_width="wrap_content" android:layout_height="wrap_content" name="statistics">Статистика</string>
+    <!-- Preferences -->
+
+
+
+<string name="pref_task_title_title">
+Количество выполненных задач</string>
+</resources>

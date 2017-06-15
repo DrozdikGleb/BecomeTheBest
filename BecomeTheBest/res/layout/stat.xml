@@ -1,0 +1,39 @@
+	
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/fon3" >
+
+<TextView
+android:id="@+id/txx"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:gravity="center_horizontal"
+android:text="Количество выполненных задач"
+android:textColor="@android:color/black"
+android:textSize="20sp" />
+
+<TextView 
+android:id="@+id/ed"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:gravity="center_horizontal"
+android:scrollbars="vertical"
+android:textSize="100sp"
+android:paddingTop="40dp" />
+
+<ProgressBar
+    android:id="@+id/anus"
+    style="@android:style/Widget.ProgressBar.Horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:indeterminate="false"
+    android:max="300"
+    android:paddingTop="80dp"
+    android:progress="0" />
+
+</LinearLayout>
